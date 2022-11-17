@@ -143,7 +143,7 @@ const UrlShortener = () => {
               direction={{ base: "column", lg: "row" }}
             >
               <Link fontWeight="bold" color="cyan">
-                <a target="_blank" href={`https://${item.shortened}`}>
+                <a rel="noreferrer" target="_blank" href={`https://${item.shortened}`}>
                   {item.shortened}
                 </a>
               </Link>
