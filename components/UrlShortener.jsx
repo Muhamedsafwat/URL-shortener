@@ -134,6 +134,7 @@ const UrlShortener = () => {
             bg="white"
             w="full"
             justify="space-between"
+            shadow="md"
             key={index}
           >
             <Text>{item.original}</Text>
