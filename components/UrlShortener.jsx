@@ -123,6 +123,7 @@ const UrlShortener = () => {
       {recents &&
         recents.slice(0, 3).map((item, index) => (
           <Flex
+            shadow="md"
             direction={{ base: "column", lg: "row" }}
             rounded="md"
             fontWeight="bold"
@@ -141,13 +142,10 @@ const UrlShortener = () => {
               w={{ base: "full", lg: "fit-content" }}
               direction={{ base: "column", lg: "row" }}
             >
-              <Link
-                fontWeight="bold"
-                color="cyan"
-                href={item.shortened}
-                target="_blank"
-              >
-                {item.shortened}
+              <Link fontWeight="bold" color="cyan">
+                <a target="_blank" href={`https://${item.shortened}`}>
+                  {item.shortened}
+                </a>
               </Link>
               <Button
                 disabled={index == copied}

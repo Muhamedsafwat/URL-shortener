@@ -66,7 +66,9 @@ const Statistics = () => {
             >
               <Image maxW="2.2rem" src={`/images/${item.image}`} />
             </Flex>
-            <Heading size="md">{item.title}</Heading>
+            <Heading textAlign={{ base: "center", lg: "start" }} size="md">
+              {item.title}
+            </Heading>
             <Text
               textAlign={{ base: "center", lg: "start" }}
               color="gray"
