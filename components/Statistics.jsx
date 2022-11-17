@@ -27,7 +27,7 @@ const Statistics = () => {
   return (
     <VStack px="1.5rem" gap="5rem">
       <VStack>
-        <Heading>Advanced Statistics</Heading>
+        <Heading textAlign="center" >Advanced Statistics</Heading>
         <Text textAlign="center">
           Track how your links are performing across the web with our advanced
           statistics dashboard.
